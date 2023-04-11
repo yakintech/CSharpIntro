@@ -37,4 +37,4 @@
 
 // 3) Ekrana bir isim gir. Bu ismin toplam kac karakter oldugunu yazdirsin
 
-string name = "Cagatay";
+//string name = "Cagatay";
