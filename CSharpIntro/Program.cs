@@ -1,26 +1,30 @@
-﻿
+﻿//Disaridan girdigi sayi 100 den buyuk olmadigi muddetce tekrar sayi girmesini isteyelim
 
-string[] sehirler = new string[2];
+//bool devamMi = true;
 
-sehirler[0] = "Erzurum";
-sehirler[1] = "Diyarbakir";
+//while (devamMi)
+//{
+//	Console.WriteLine("Sayi giriniz");
+//	int sayi = Convert.ToInt32(Console.ReadLine());
 
-
-string[] ulkeler = { "Turkiye", "Almanya", "Yunanistan", "Iran","Bulgaristan" };
-//ulkeler[0] = "Rusya";
-
-Console.WriteLine(ulkeler[0]);
-
-//Dizide kac eleman var?
-Console.WriteLine(ulkeler.Length);
+//	if(sayi > 100)
+//		devamMi= false;
+//}
 
 
-//Ulkeler dizisini ekrana yaz
-for (int i = 0; i <= ulkeler.Length; i++)
+
+//Disaridan girdigi sayi 100 den buyuk olmadigi muddetce tekrar sayi girmesini isteyelim FOR ILE YAP!
+
+for (int i = 0; i < 1; i++)
 {
-    Console.WriteLine(ulkeler[i]);
+    Console.WriteLine("Sayi giriniz");
+    int sayi = Convert.ToInt32(Console.ReadLine());
+
+    if (sayi < 100)
+        i--;
+        
 }
 
 
-int[] sayilar = { 5, 11, -2, 254, 7878, 1, -22, 34, -999, 987 };
+
 
