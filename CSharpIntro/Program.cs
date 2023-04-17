@@ -29,8 +29,6 @@
 DateTime date2 = new DateTime(2022, 12, 20);
 Console.WriteLine(date2);
 
-
-
 //20 gun sonra gunlerden ne? carsamba mi persembe mi?
 DateTime date = DateTime.Now;
 DateTime newDate = date.AddDays(20);
@@ -43,6 +41,30 @@ DateTime newDate3 = new DateTime(1920, 4, 23);
 TimeSpan timespan = DateTime.Now - newDate3;
 
 Console.WriteLine(timespan.TotalDays);
+
+//Kac gun once DOGDUN KARDESIM?
+
+
+//2023 Mayis ayindan RASTGELE 5 tarih sec ve listeye at
+List<DateTime> dates = new List<DateTime>();
+for (int i = 0; i < 5; i++)
+{
+    Random rnd = new Random();
+    int randomDay = rnd.Next(31);
+
+    var randomDate = new DateTime(2023, 5, randomDay);
+
+    if (dates.Contains(randomDate))
+    {
+        i--;
+    }
+    else
+    {
+        dates.Add(randomDate);
+    }
+}
+
+Console.WriteLine(dates.Count);
 
 
 
