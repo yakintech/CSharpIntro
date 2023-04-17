@@ -1,30 +1,48 @@
-﻿//Disaridan girdigi sayi 100 den buyuk olmadigi muddetce tekrar sayi girmesini isteyelim
+﻿
 
-//bool devamMi = true;
+//1-100 arasinda 10 tane rastgele sayi uret ve bunu bir listeye koy. SAYILAR OZGUN OLMALI. Ayni sayi iki defa olamaz
 
-//while (devamMi)
+//List<int> numbers = new List<int>();
+
+//for(int i = 0;i < 10; i++)
 //{
-//	Console.WriteLine("Sayi giriniz");
-//	int sayi = Convert.ToInt32(Console.ReadLine());
+//    Random rnd = new Random();
+//    int randomNumber = rnd.Next(100);
 
-//	if(sayi > 100)
-//		devamMi= false;
+//    bool hasNumber = numbers.Contains(randomNumber);
+
+//    if (hasNumber)
+//    {
+//        i--;
+//    }
+//    else
+//    {
+//        numbers.Add(randomNumber);
+//    }
 //}
 
 
 
-//Disaridan girdigi sayi 100 den buyuk olmadigi muddetce tekrar sayi girmesini isteyelim FOR ILE YAP!
+//DateTime date = DateTime.Now;
+//Console.WriteLine(date); // 4/17/2023 10:47:52 AM
 
-for (int i = 0; i < 1; i++)
-{
-    Console.WriteLine("Sayi giriniz");
-    int sayi = Convert.ToInt32(Console.ReadLine());
+DateTime date2 = new DateTime(2022, 12, 20);
+Console.WriteLine(date2);
 
-    if (sayi < 100)
-        i--;
-        
-}
 
+
+//20 gun sonra gunlerden ne? carsamba mi persembe mi?
+DateTime date = DateTime.Now;
+DateTime newDate = date.AddDays(20);
+
+Console.WriteLine(newDate.DayOfWeek);
+
+
+//23 Nisandan bugune kac gun gecti
+DateTime newDate3 = new DateTime(1920, 4, 23);
+TimeSpan timespan = DateTime.Now - newDate3;
+
+Console.WriteLine(timespan.TotalDays);
 
 
 
